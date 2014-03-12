@@ -5,7 +5,7 @@ include PiPiper
 
 ra = RoboticArm.new
 
-watch :pin => 23 do
+watch :pin => 25 do
   puts "Pin changed from #{last_value} to #{value}"
 end
 
