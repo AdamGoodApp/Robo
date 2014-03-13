@@ -7,7 +7,7 @@ ra = RoboticArm.new
 
 left = 2
 right = 3
-up = 7
+up = 8
 
 # watch :pin => left do
 #   puts "Pin changed from #{last_value} to #{value}"
