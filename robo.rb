@@ -16,7 +16,7 @@ puts "hello"
 
 #Or
 
-after :pin => 25, :goes => :high do
+after :pin => 25, :goes => :low do
   puts "Button pressed"
 end
 
