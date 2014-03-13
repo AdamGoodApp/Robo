@@ -11,18 +11,14 @@ right = 3
 watch :pin => left do
   puts "Pin changed from #{last_value} to #{value}"
   if value == 0
-  	ra.base.left 10
-  else
-  	ra.stop
+  	ra.base.left 0.7
   end
 end
 
 watch :pin => right do
   puts "Pin changed from #{last_value} to #{value}"
   if value == 0
-  	ra.base.right 10
-  else
-  	ra.stop
+  	ra.base.right 0.7
   end
 end
 
