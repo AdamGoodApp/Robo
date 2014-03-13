@@ -5,10 +5,14 @@ include PiPiper
 
 ra = RoboticArm.new
 
-watch :pin => 2 do
+left = 2
+
+watch :pin => left do
   puts "Pin changed from #{last_value} to #{value}"
   if value == 0
-  	ra.base.left 0.7
+  	ra.base.left 10
+  elsif value == 1
+  	ra.stop
   end
 end
 
