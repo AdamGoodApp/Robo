@@ -13,7 +13,7 @@ gpio.mode left, INPUT
 # on.
 loop do
   state = gpio.readAll
-  if state[left] == 0
+  if state[left] == 1
     puts "yay left"
   end    
   sleep 0.3
