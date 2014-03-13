@@ -9,19 +9,19 @@ left = 2
 right = 3
 up = 7
 
-watch :pin => left do
-  puts "Pin changed from #{last_value} to #{value}"
-  if value == 0
-  	ra.base.left 0.7
-  end
-end
+# watch :pin => left do
+#   puts "Pin changed from #{last_value} to #{value}"
+#   if value == 0
+#   	ra.base.left 0.7
+#   end
+# end
 
-watch :pin => right do
-  puts "Pin changed from #{last_value} to #{value}"
-  if value == 0
-  	ra.base.right 0.7
-  end
-end
+# watch :pin => right do
+#   puts "Pin changed from #{last_value} to #{value}"
+#   if value == 0
+#   	ra.base.right 0.7
+#   end
+# end
 
 watch :pin => up do
   puts "Pin changed from #{last_value} to #{value}"
