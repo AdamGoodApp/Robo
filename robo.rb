@@ -5,20 +5,18 @@ include PiPiper
 
 ra = RoboticArm.new
 
-puts "hello"
-
-# watch :pin => 25 do
-#   puts "Pin changed from #{last_value} to #{value}"
-#   # if value == 1
-#   # 	ra.base.right 0.7
-#   # end
-# end
+watch :pin => 2 do
+  puts "Pin changed from #{last_value} to #{value}"
+  # if value == 1
+  # 	ra.base.right 0.7
+  # end
+end
 
 #Or
 
-after :pin => 25, :goes => :low do
-  puts "Button pressed"
-end
+# after :pin => 25, :goes => :low do
+#   puts "Button pressed"
+# end
 
 PiPiper.wait
 
