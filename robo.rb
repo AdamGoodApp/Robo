@@ -6,8 +6,9 @@ include PiPiper
 ra = RoboticArm.new
 
 left = 2
-right = 3
+right = 
 up = 2
+down = 3
 
 # watch :pin => left do
 #   puts "Pin changed from #{last_value} to #{value}"
@@ -27,6 +28,13 @@ watch :pin => up do
   puts "Pin changed from #{last_value} to #{value}"
   if value == 0
   	ra.wrist.up 0.3
+  end
+end
+
+watch :pin => down do
+  puts "Pin changed from #{last_value} to #{value}"
+  if value == 0
+  	ra.wrist.down 0.3
   end
 end
 
