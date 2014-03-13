@@ -6,7 +6,7 @@ include PiPiper
 ra = RoboticArm.new
 
 left = 2
-right = 
+right = 4
 up = 2
 down = 3
 
@@ -17,12 +17,12 @@ down = 3
 #   end
 # end
 
-# watch :pin => right do
-#   puts "Pin changed from #{last_value} to #{value}"
-#   if value == 0
-#   	ra.base.right 0.7
-#   end
-# end
+watch :pin => right do
+  puts "Pin changed from #{last_value} to #{value}"
+  if value == 0
+  	ra.base.right 0.7
+  end
+end
 
 watch :pin => up do
   puts "Pin changed from #{last_value} to #{value}"
