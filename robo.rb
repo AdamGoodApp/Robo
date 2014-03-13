@@ -8,7 +8,7 @@ ra = RoboticArm.new
 left = 2
 right = 3
 up = 10
-down = 17
+down = 18
 
 watch :pin => left do
   if value == 0
@@ -23,12 +23,12 @@ watch :pin => right do
   end
 end
 
-watch :pin => up do
-  puts "Pin changed from #{last_value} to #{value}"
-  if value == 0
-  	ra.wrist.up 0.3
-  end
-end
+# watch :pin => up do
+#   puts "Pin changed from #{last_value} to #{value}"
+#   if value == 0
+#   	ra.wrist.up 0.3
+#   end
+# end
 
 watch :pin => down do
   puts "Pin changed from #{last_value} to #{value}"
