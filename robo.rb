@@ -5,7 +5,7 @@ include PiPiper
 
 ra = RoboticArm.new
 
-left = 25
+left = 2
 right = 9
 up = 10
 down = 17
