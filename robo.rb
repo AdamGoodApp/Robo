@@ -5,10 +5,10 @@ include PiPiper
 
 ra = RoboticArm.new
 
-left = 2
+left = 
 right = 3
 up = 10
-down = 24
+down = 2
 
 watch :pin => left do
   if value == 0
