@@ -9,6 +9,9 @@ puts "hello"
 
 watch :pin => 25 do
   puts "Pin changed from #{last_value} to #{value}"
+  if value == 1
+  	ra.base.right 0.7
+  end
 end
 
 #Or
