@@ -7,9 +7,9 @@ ra = RoboticArm.new
 
 watch :pin => 2 do
   puts "Pin changed from #{last_value} to #{value}"
-  # if value == 1
-  # 	ra.base.right 0.7
-  # end
+  if value == 0
+  	ra.base.left 0.7
+  end
 end
 
 #Or
