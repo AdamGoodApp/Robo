@@ -33,6 +33,8 @@ end
 watch :pin => down do
   puts "Pin changed from #{last_value} to #{value}"
   if value == 0
+  
+  else
   	ra.wrist.down 0.3
   end
 end
