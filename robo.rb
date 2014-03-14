@@ -7,8 +7,8 @@ ra = RoboticArm.new
 
 left = 2
 right = 3
-up = 11
-down = 24
+up = 12
+down = 11
 
 watch :pin => left do
   if value == 0
