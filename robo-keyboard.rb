@@ -1,3 +1,5 @@
+#! /usr/bin/env ruby
+
 require 'robotic-arm'
 require 'pry'
 require 'gosu'
