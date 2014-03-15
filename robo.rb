@@ -32,9 +32,9 @@ end
 
 watch :pin => down do
   puts "Pin changed from #{last_value} to #{value}"
-  if value == 0 || value == 1
+  if value == 0 && value == 1
   	ra.stop
-  elsif value != 1 || value !=0
+  elsif value != 1 && value !=0
   	ra.wrist.down 0.3
   end
 end
