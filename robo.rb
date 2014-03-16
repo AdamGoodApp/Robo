@@ -1,6 +1,5 @@
 require 'pi_piper'
 require 'robotic-arm'
-require 'pry'
 include PiPiper
 
 ra = RoboticArm.new
