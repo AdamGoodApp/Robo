@@ -17,11 +17,11 @@ loop do
 	end
 
 	if ch.include? "B"
-	  ra.wrist.down 0.3
+	  ra.elbow.down 0.3
 	end
 
 	if ch.include? "A"
-	  ra.wrist.up 0.3
+	  ra.elbow.up 0.3
 	end
 
 	# if ch.include? "q"
