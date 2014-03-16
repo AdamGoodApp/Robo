@@ -4,7 +4,7 @@ include PiPiper
 
 ra = RoboticArm.new
 
-PiPiper.watch :pin => 17, :invert => true do |pin|
+PiPiper.watch :pin => 25, :invert => true do |pin|
   puts "Pin changed from #{pin.last_value} to #{pin.value}"
 end
 
