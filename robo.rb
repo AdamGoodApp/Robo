@@ -4,7 +4,7 @@ include PiPiper
 
 # ra = RoboticArm.new
 
-if :pin => 25, :goes => :low
+if :pin => 25, :goes => :low do
   puts "Button pressed"
  else
  	puts "turn right!"
