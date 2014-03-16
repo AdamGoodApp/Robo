@@ -4,12 +4,10 @@ include PiPiper
 
 # ra = RoboticArm.new
 
-watch :pin => 25 do
-  if value == 0 || value == 1
-  	puts "i shouldnt be moving"
-  elsif value != 0 && value != 1
-  	puts "turn left!"
-  end
+pin = PiPiper::Pin.new(:pin => 25, :direction => :in)
+
+loop do
+	puts pin
 end
 
 PiPiper.wait
