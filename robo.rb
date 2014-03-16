@@ -5,7 +5,7 @@ include PiPiper
 # ra = RoboticArm.new
 
 after :pin => 25, :goes => :high do
-  puts :pin
+  puts "#{:pin}"
 end
 
 PiPiper.wait
