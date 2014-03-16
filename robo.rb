@@ -7,7 +7,7 @@ include PiPiper
 watch :pin => 25 do
   if value == 0 || value == 1
   	puts "i shouldnt be moving"
-  else 
+  elsif value != 0 && value != 1
   	puts "turn left!"
   end
 end
