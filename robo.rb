@@ -8,11 +8,13 @@ pin = PiPiper::Pin.new(:pin => 25, :direction => :in)
 
 loop do
 
-if pin == pin.on 
+case pin
+when pin.on
 	puts "its on!"
 else
 	puts "its off"
 end
+
 
 end
 
