@@ -4,18 +4,8 @@ include PiPiper
 
 # ra = RoboticArm.new
 
-pin = PiPiper::Pin.new(:pin => 25, :direction => :in)
-
-loop do
-
-case pin
-when pin.on
-	puts "its on!"
-else
-	puts "its off"
-end
-
-
+after :pin => 25, :goes => :low do
+  puts "Button pressed"
 end
 
 PiPiper.wait
