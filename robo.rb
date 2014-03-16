@@ -6,6 +6,8 @@ include PiPiper
 
 after :pin => 25, :goes => :low do
   puts "Button pressed"
+ else
+ 	puts "turn right!"
 end
 
 PiPiper.wait
