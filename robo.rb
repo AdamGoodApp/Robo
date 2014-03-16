@@ -7,7 +7,8 @@ include PiPiper
 pin = PiPiper::Pin.new(:pin => 25, :direction => :in)
 
 loop do
-	puts pin
+	if pin == pin.off
+		puts "yay"
 end
 
 PiPiper.wait
