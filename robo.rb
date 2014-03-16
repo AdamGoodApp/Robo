@@ -4,8 +4,12 @@ include PiPiper
 
 ra = RoboticArm.new
 
-PiPiper.watch :pin => 25, :invert => true do |pin|
-  ra.base.right 0.7
+pin = PiPiper::Pin.new(:pin => 25, :direction => :in)
+
+if pin == pin.on 
+	puts "its on!"
+else
+	puts "its off"
 end
 
 PiPiper.wait
